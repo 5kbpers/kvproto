@@ -89,6 +89,7 @@ enum CmdType {
     DeleteRange = 7;
     IngestSST = 8;
     ReadIndex = 9;
+    Commit = 10;
 }
 
 message Request {
