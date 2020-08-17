@@ -54,9 +54,18 @@ message PrewriteRequest {
     bytes key = 1;
     bytes value = 2;
     bytes lock = 3;
+    uint64 start_version = 4;
 }
 
 message PrewriteResponse {}
+
+message CommitRequest {
+    bytes key = 1;
+    uint64 start_version = 2;
+    uint64 commit_version = 3;
+}
+
+message CommitResponse {}
 
 message IngestSSTRequest {
     import_sstpb.SSTMeta sst = 1;
