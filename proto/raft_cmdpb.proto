@@ -102,6 +102,7 @@ message Request {
     DeleteRangeRequest delete_range = 8;
     IngestSSTRequest ingest_sst = 9;
     ReadIndexRequest read_index = 10;
+    CommitRequest commit = 11;
 }
 
 message Response {
