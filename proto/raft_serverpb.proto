@@ -102,6 +102,7 @@ enum ExtraMessageType {
     MsgWantRollbackMerge = 1;
     MsgCheckStalePeer = 2;
     MsgCheckStalePeerResponse = 3;
+    MsgStoreWakeUp = 4;
 }
 
 message ExtraMessage {
